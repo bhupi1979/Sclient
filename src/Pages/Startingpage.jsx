@@ -101,7 +101,7 @@ export default function Startingpage() {
   }
   return (
     <>
-      <h1 className='bg bg-info text-dark text-uppercase'>this is starting page</h1>
+      
       <ul className="list-group list-group-horizontal-lg">
   <li className="list-group-item"><h5>WELCOME user{username} register on date {userdate}</h5>
 </li>

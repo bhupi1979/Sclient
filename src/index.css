@@ -2,6 +2,10 @@
 .imagelogo{width:10rem;height: 10rem;}
 Nav.Link{ font-size: 5rem;}
 .carousel1 img{height: 550px;width: 100%;}
+.newnavbar{background: linear-gradient(-200deg, #d3a960ff, #c5994d);}
+.body{background: linear-gradient(200deg, #d8c7aa, #c97f00);}
+.loginregister{transform: scale(1); transition: transform 1s,color 1s; border-radius: 0 50% 0 50%;}
+.loginregister:hover{transform: scale(1.1); transition: transform 1s, color 1s; color:rgb(83, 4, 4);}
 /* loader csss */
 .loader-overlay {
   position: fixed;
