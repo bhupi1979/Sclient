@@ -78,19 +78,20 @@ export default function ImageCaptchaForm() {
   // };
 
   return (
-    <div className="d-flex justify-align-content-lg-start ps-4">
+    <div className="container w-100">
       {/* <h2>Image CAPTCHA Form</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Your name" required />
         <br /><br /> */}
-
-        <canvas className="me-4"
+      <div className="row">
+        <div className="col-lg-6">
+        <canvas className="mx-lg-4"
           ref={canvasRef}
-          width={180}
+          width={200}
           height={50}
           style={{ border: "1px solid #ccc"}}
         ></canvas>
-
+</div>
         {/* <input
           type="text"
           placeholder="Enter CAPTCHA"
@@ -103,10 +104,13 @@ export default function ImageCaptchaForm() {
         <button type="submit" disabled={!isValid}>
           Submit
         </button> */}
-        <button type="button" onClick={generateCaptcha} className="px-3" >
+        <div className="col-lg-6">
+        <button type="button" onClick={generateCaptcha} className="btn btn-primary mt-lg-2" >
           Refresh CAPTCHA
         </button>
+        </div>
       {/* </form> */}
+      </div>
     </div>
   );
 }

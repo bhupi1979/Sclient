@@ -7,11 +7,11 @@ export const Printbill=(obj)=>{
         console.log(v) 
         console.log(i)
     totalRows=totalRows+1})
-    const shopName = "DSHA MOMO";
-    const shopAddress1 = "01 Pratapgarh ";
-    const shopAddress2 = "Power-house ke samani";
-    const shopAddress3 = "312605";
-    const Mobileno="9784603355"
+    const shopName = "SAKSHAM RESTAURANT";
+    const shopAddress1 = "HOTEL ROYAL PALACE ";
+    const shopAddress2 = "ARNOD ROAD DALOT";
+    const shopAddress3 = "312619";
+    const Mobileno="7568377207"
   const billDate = new Date().toLocaleString();
 const rowHeight = 6;
 
@@ -33,7 +33,7 @@ const billHeight = headerFooterHeight + (rowHeight * totalRows);
       doc.text(shopAddress3, 37, 25, { align: "center" })
        doc.text(`Mobil-no:${Mobileno}`, 37, 30, { align: "center" })
     doc.text(`Date: ${billDate} Mode:${Mode}`,37, 35, {align:"center"})
-    doc.text(`cashier Dipesh Ameta Billno :- 6643`, 37, 40, { align: "center" });
+    doc.text(`cashier Hemlata Nagar Billno :- 6643`, 37, 40, { align: "center" });
 
     // ===== TABLE HEADER =====
     let startY = 50;
@@ -72,10 +72,10 @@ const billHeight = headerFooterHeight + (rowHeight * totalRows);
 
     // ===== FOOTER =====
     doc.line(5, y + 2, 75, y + 2); // line before grand total
-    doc.setFontSize(10);
+    doc.setFontSize(8);
     doc.text(`Grand Total:Rs ${grandTotal}`, 25, y + 8)
     doc.line(5, y + 10, 75, y + 10); // line after grand total
-doc.text("!!! Thank you for visiting DISHA MOMO!!!",5,y+14)
+doc.text("!!! Thank you for visiting SAKSHAM RESTAURANT!!!",4,y+14)
     // ===== PRINT =====
     window.open(doc.output("bloburl"), "_blank").print();
   };

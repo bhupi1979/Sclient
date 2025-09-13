@@ -166,7 +166,7 @@ const isvalid=()=>{
     <input type="password" className="form-control" name="password" value={formdata.password||""} onChange={handlechange} />
     {error.password? <div className='text-danger'>{error.password}</div>:null}
   </div>
-  <ImageCaptchaForm/>
+  <ImageCaptchaForm />
   <div className="mb-3 text-start px-4">
     <label  className="form-label"> Enter Captcha</label>
     <input type="text" className="form-control" name="captcha" value={formdata.captcha||""} onChange={handlechange} />

@@ -1,5 +1,6 @@
 *{margin:0;padding:0;}
-.imagelogo{width:10rem;height: 10rem;}
+
+.imagelogo{width:10rem;height: 10rem; border-radius: 50%;}
 Nav.Link{ font-size: 5rem;}
 .carousel1 img{height: 550px;width: 100%;}
 .newnavbar{background: linear-gradient(-200deg, #d3a960ff, #c5994d);}

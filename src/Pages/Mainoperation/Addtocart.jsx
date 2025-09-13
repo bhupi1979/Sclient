@@ -176,7 +176,7 @@ const generateqt = async (e) => {
                 </select>  
                 {/* sub category data from mainctgory id */}
                 {subcategrydata.map((cat) => (
-              <button key={cat._id} value={cat._id} className='btn btn-warning mx-2 my-2' onClick={()=>handleorder(cat)}>
+              <button key={cat._id} value={cat._id} className='btn btn-success mx-2 my-2' onClick={()=>handleorder(cat)}>
                 {cat.subcategoryname}
               </button>
             ))}
