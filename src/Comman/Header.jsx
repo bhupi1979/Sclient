@@ -1,6 +1,11 @@
 import React from 'react'
 import { Container, Nav, Navbar ,Carousel} from 'react-bootstrap'
 import logo from '../assets/logo.jpeg'
+import image1 from '../assets/rec1-l.jpg'
+import image2 from '../assets/rec2-l.jpg'
+import image3 from '../assets/rec3-l.jpeg'
+import image4 from '../assets/rec4-l.jpg'
+
 import { Link } from 'react-router-dom'
 export default function Header() {
   return (
@@ -24,16 +29,16 @@ export default function Header() {
     <p className='text-white mb-5 '>HOTEL ROYAL PALACE located at pratapgarh to ratalam road at dalot in district Pratapgarh Rajasthan since 4 april 2022 is the one of best 2 star hotel in district pratapgarh.Hotel Royal palace is beautifully structured hotel situated in dalot. it is located at 40 km from pratapgarh and 30 km from jaora in MP and 65 km from ratalam.Hotel royal palace is modern budget hotel with affordable prize of room rent and having SASKHAM RESTARUANT.this Restaurant is perfect family Restaurant provide delicious indian dishes and continental food.</p>
      <Carousel className='carousel1'>
       <Carousel.Item>
-        <img src="https://postimage.me/images/2025/09/12/rec1-l.jpg" className='img-fluid' alt='image1'/>
+        <img src={image1} className='img-fluid' alt='image1'/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src="https://postimage.me/images/2025/09/12/rec2-l.jpg" className='img-fluid'alt='image1'/>
+        <img src={image2} className='img-fluid'alt='image1'/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src="https://postimage.me/images/2025/09/12/rec3-l.jpeg" className='img-fluid' alt='image1'/>
+        <img src={image3} className='img-fluid' alt='image1'/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src="https://postimage.me/images/2025/09/12/rec4-l.jpg" className='img-fluid' alt='image1'/>
+        <img src={image4} className='img-fluid' alt='image1'/>
       </Carousel.Item>
     </Carousel>
     </>
